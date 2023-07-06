@@ -8,7 +8,7 @@ const font = Montserrat({subsets: ['latin']});
 
 export const metadata: Metadata = {
 	title: 'DSP Terms',
-	description: 'Digital signal processing (DSP) terminology',
+	description: 'Digital signal processing terminology',
 };
 
 const RootLayout = ({
