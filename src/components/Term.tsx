@@ -10,11 +10,9 @@ type TermProps = {
 export const Term = ({id, term, expansion, children}: TermProps) => {
 	return (
 		<div>
-			<TermTitle id={id} term={term} expansion={expansion}/>
-			<dd>
-				{expansion && <div className='pb-1 text-sm italic'>{expansion}</div>}
-				<div>{children}</div>
-			</dd>
+			<Title id={id} term={term} expansion={expansion}/>
+			{expansion && <div className='pb-1 text-sm italic'>{expansion}</div>}
+			<div>{children}</div>
 		</div>
 	);
 };
@@ -41,29 +39,29 @@ export const TermExternalLink = ({href, children}: TermExternalLinkProps) => {
 	);
 };
 
-type TermTitleProps = {
+type TitleProps = {
 	id: string;
 	term: string;
 	expansion?: string;
 };
-const TermTitle = ({id, term, expansion}: TermTitleProps) => {
+const Title = ({id, term, expansion}: TitleProps) => {
 	if (expansion) {
 		return (
-			<Dt id={id}><abbr className='no-underline' title={expansion}>{term}</abbr></Dt>
+			<TitleH3 id={id}><abbr className='no-underline' title={expansion}>{term}</abbr></TitleH3>
 		);
 	}
 
 	return (
-		<Dt id={id}>{term}</Dt>
+		<TitleH3 id={id}>{term}</TitleH3>
 	);
 };
 
-type DtProps = {
+type TitleH3Props = {
 	id: string;
 	children: React.ReactNode;
 };
-const Dt = ({id, children}: DtProps) => {
+const TitleH3 = ({id, children}: TitleH3Props) => {
 	return (
-		<dt id={id} className='pb-1 text-lg font-semibold'>{children}</dt>
+		<h3 id={id} className='pb-1 text-lg font-semibold'>{children}</h3>
 	);
 };

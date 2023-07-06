@@ -26,6 +26,8 @@ const IndexPage = () => {
 				<TermRow>The common occurrence of this is trying to represent a signal higher than your nyquist frequency.</TermRow>
 				<TermExternalLink href='http://www.slack.net/~ant/bl-synth/3.nyquist.html'>The Nyquist Limit</TermExternalLink>
 			</Term>
+			<div className='h-0.5 w-full bg-red-500'/>
+			<p className='italic text-red-500'>tests below ...</p>
 			<Term id='hash-test' term='<Hash Test>'>
 				<TermRow>
 					Click <Link className='text-red-500' href='#lorem-a'>here</Link>.
