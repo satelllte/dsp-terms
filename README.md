@@ -1,20 +1,14 @@
 # DSP Terms
 
-Digital signal processing (DSP) terminology.
+**[dsp-terms.vercel.app](https://dsp-terms.vercel.app)**
 
-*A fork of [sudara/dspjargon](https://github.com/sudara/dspjargon), built into the webpage.*
+〰️〰️〰️
 
-## Vercel
+Digital signal processing (DSP) terminology
 
-### Skipping deploys
+〰️〰️〰️
 
-There's an ability to skip deployment to Vercel by including `[skip deploy]` text into the commit message.
-
-To configure it in Vercel project, go to "Settings" -> "Git" -> "Ignored Build Step" and add this line:
-
-```sh
-git log -1 --pretty=oneline --abbrev-commit | grep -w "\[skip deploy\]" && exit 0 || exit 1
-```
+This repository is a fork of [sudara/dspjargon](https://github.com/sudara/dspjargon), built into a webpage.
 
 ## Local development
 
