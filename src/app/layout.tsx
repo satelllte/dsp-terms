@@ -18,8 +18,10 @@ const RootLayout = ({
 }) => {
 	return (
 		<html lang='en'>
-			<body className={clsx(font.className, 'bg-stone-950 text-stone-50')}>
-				{children}
+			<body className={clsx(font.className, 'bg-gray-200 text-stone-950')}>
+				<div className='mx-auto max-w-screen-2xl bg-stone-50'>
+					{children}
+				</div>
 			</body>
 		</html>
 	);

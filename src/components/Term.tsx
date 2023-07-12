@@ -11,7 +11,7 @@ export const Term = ({id, term, expansion, children}: TermProps) => {
 	return (
 		<div>
 			<Title id={id} term={term} expansion={expansion}/>
-			{expansion && <div className='pb-1 text-sm italic'>{expansion}</div>}
+			{expansion && <div className='pb-2 text-sm italic'>{expansion}</div>}
 			<div>{children}</div>
 		</div>
 	);
@@ -62,6 +62,6 @@ type TitleH3Props = {
 };
 const TitleH3 = ({id, children}: TitleH3Props) => {
 	return (
-		<h3 id={id} className='pb-1 text-lg font-semibold'>{children}</h3>
+		<h3 id={id} className='pb-3 text-3xl font-semibold md:text-4xl'>{children}</h3>
 	);
 };

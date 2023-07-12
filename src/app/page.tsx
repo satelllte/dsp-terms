@@ -1,12 +1,11 @@
 import {Term, TermRow, TermExternalLink} from '@/components/Term';
-import Link from 'next/link';
 
 const IndexPage = () => {
 	return (
-		<>
-			<h1 className='py-5 text-5xl'>DSP Terms</h1>
-			<p className='py-4 text-xl'>Digital signal processing terminology.</p>
-			<div className='flex flex-col gap-6 p-8'>
+		<div className='px-8 py-16 md:px-12 md:py-20 lg:px-20'>
+			<h1 className='pb-2 text-5xl font-bold md:relative md:-left-1 md:text-7xl'>DSP Terms</h1>
+			<p className='text-xl'>Digital signal processing terminology.</p>
+			<div className='flex flex-col gap-10 pt-20 md:grid md:grid-cols-2 md:pt-28 lg:grid-cols-3'>
 				<Term id='adc' term='ADC' expansion='Analog to Digital Converter'>
 					{/* eslint-disable-next-line no-warning-comments */}
 					{/* TODO: link to "continuous time" */}
@@ -29,35 +28,8 @@ const IndexPage = () => {
 					<TermRow>The common occurrence of this is trying to represent a signal higher than your nyquist frequency.</TermRow>
 					<TermExternalLink href='http://www.slack.net/~ant/bl-synth/3.nyquist.html'>The Nyquist Limit</TermExternalLink>
 				</Term>
-				<div className='h-0.5 w-full bg-red-500'/>
-				<p className='italic text-red-500'>tests below ...</p>
-				<Term id='hash-test' term='<Hash Test>'>
-					<TermRow>
-						Click <Link className='text-red-500' href='#lorem-a'>here</Link>.
-					</TermRow>
-				</Term>
-				<TermLorem id='lorem-a'/>
-				<TermLorem id='lorem-b'/>
-				<TermLorem id='lorem-c'/>
-				<TermLorem id='lorem-d'/>
-				<TermLorem id='lorem-e'/>
-				<TermLorem id='lorem-f'/>
-				<TermLorem id='lorem-g'/>
 			</div>
-		</>
-	);
-};
-
-type TermLoremProps = {
-	id: string;
-};
-const TermLorem = ({id}: TermLoremProps) => {
-	return (
-		<Term id={id} term={id}>
-			<TermRow>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TermRow>
-			<TermRow>Assumenda cum velit eligendi libero reiciendis! Ad adipisci tempore dolores harum a hic necessitatibus quaerat perferendis asperiores?</TermRow>
-			<TermRow>Veritatis nobis deleniti voluptate dolores!</TermRow>
-		</Term>
+		</div>
 	);
 };
 
