@@ -26,4 +26,23 @@ describe('terms', () => {
 	they('have no duplicates in titles', () => {
 		expect((new Set(titles)).size).toEqual(titles.length);
 	});
+
+	they('have valid links to other terms', () => {
+		terms.forEach(({paragraphs}) => {
+			paragraphs.forEach(paragraph => {
+				if (typeof paragraph === 'string') {
+					return;
+				}
+
+				paragraph.forEach(p => { // eslint-disable-line max-nested-callbacks
+					if (typeof p === 'string') {
+						return;
+					}
+
+					const {id} = p;
+					expect(ids).toContainEqual(id);
+				});
+			});
+		});
+	});
 });
