@@ -155,7 +155,7 @@ export const terms: Term[] = [
 			'A bunch of values stored contiguously in memory.',
 			'Instead of expecting programs to handle real time audio one value at a time, values are batched into buffers for more efficient processing.',
 			'Delay lines are implemented with buffers',
-			'Most of DAW\'s have input and output buffers to help ensure artifact-free and CPU-overload free performance.',
+			['Most of ', {title: 'DAW', id: 'daw'}, '\'s have input and output buffers to help ensure artifact-free and CPU-overload free performance.'],
 		],
 	},
 	{
@@ -164,7 +164,7 @@ export const terms: Term[] = [
 		expansion: 'Digital to Analog Converter',
 		paragraphs: [
 			'Converts a digital signal to a continuous time, analog signal.',
-			'The opposite of an ADC.',
+			['The opposite of an ', {title: 'ADC', id: 'adc'}, '.'],
 		],
 	},
 	{
@@ -213,11 +213,18 @@ export type Term = {
 	id: string;
 	title: string;
 	expansion?: string;
-	paragraphs: string[];
+	paragraphs: TermParagraph[];
 	links?: TermExternalLink[];
 };
 
-type TermExternalLink = {
+export type TermExternalLink = {
 	href: string;
 	title: string;
 };
+
+export type TermInternalLink = {
+	id: string;
+	title: string;
+};
+
+export type TermParagraph = string | Array<string | TermInternalLink>;

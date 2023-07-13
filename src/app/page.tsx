@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import {Term} from '@/components/Term';
+import {LinkToTerm} from '@/components/LinkToTerm';
 import {terms} from '@/data/terms';
 
 export default function IndexPage() {
@@ -16,7 +16,7 @@ export default function IndexPage() {
 					<div className='flex flex-col gap-1'>
 						{terms.map(({id, title}) => (
 							<div key={id}>
-								<Link href={`/#${id}`} className='text-blue-600'>{title}</Link>
+								<LinkToTerm id={id} title={title}/>
 							</div>
 						))}
 					</div>
