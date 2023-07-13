@@ -11,18 +11,23 @@ export function Term({id, title, expansion, paragraphs, links}: TermProps) {
 			</h3>
 			{expansion && <div className='pb-3 text-sm font-semibold'>{expansion}</div>}
 			{paragraphs.map(paragraph => (<p key={paragraph}>{paragraph}</p>))}
-			{links?.map(({href, title}) => (
-				<Link
-					key={href}
-					href={href}
-					className='flex items-baseline gap-1 pt-1 text-blue-600'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<ExternalLinkIcon/>
-					{title}
-				</Link>
-			))}
+			{links && (
+				<div className='flex flex-col pt-2'>
+					{links.map(({href, title}) => (
+						<span key={href}>
+							<Link
+								href={href}
+								className='inline-flex items-baseline gap-1 pt-1 text-blue-600'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<ExternalLinkIcon/>
+								{title}
+							</Link>
+						</span>
+					))}
+				</div>
+			)}
 		</div>
 	);
 }
