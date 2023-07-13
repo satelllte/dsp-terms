@@ -149,6 +149,16 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'buffer',
+		title: 'Buffer',
+		paragraphs: [
+			'A bunch of values stored contiguously in memory.',
+			'Instead of expecting programs to handle real time audio one value at a time, values are batched into buffers for more efficient processing.',
+			'Delay lines are implemented with buffers',
+			'Most of DAW\'s have input and output buffers to help ensure artifact-free and CPU-overload free performance.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
