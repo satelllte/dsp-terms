@@ -68,6 +68,14 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'asdf',
+		title: 'ASDF',
+		expansion: 'Average Square Difference Function',
+		paragraphs: [
+			'A math function that measures the average absolute difference between overlapping sections of a signal.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
