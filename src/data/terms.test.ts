@@ -4,7 +4,7 @@ import {terms} from './terms';
 describe('terms', () => {
 	const they = it;
 
-	const ids = terms.map(({id}) => id.toLowerCase());
+	const ids = terms.map(({id}) => id);
 	const titles = terms.map(({title}) => title.toLowerCase());
 
 	they('have all ids sorted', () => {
@@ -15,7 +15,7 @@ describe('terms', () => {
 
 	they('have all titles sorted', () => {
 		for (let i = 1; i < titles.length; i++) {
-			expect(titles[i - 1].toLowerCase() < titles[i].toLowerCase()).toEqual(true);
+			expect(titles[i - 1] < titles[i]).toEqual(true);
 		}
 	});
 
