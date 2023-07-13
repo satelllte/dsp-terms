@@ -6,7 +6,7 @@ import clsx from 'clsx';
 export function Term({id, title, expansion, paragraphs, links}: TermProps) {
 	return (
 		<div>
-			<h3 id={id} className={clsx('text-3xl font-semibold md:text-4xl', !expansion && 'pb-3')}>
+			<h3 id={id} className={clsx('text-2xl font-semibold md:text-3xl', !expansion && 'pb-3')}>
 				{title}
 			</h3>
 			{expansion && <div className='pb-3 text-sm font-semibold'>{expansion}</div>}
