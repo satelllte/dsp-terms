@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={clsx(font.className, 'bg-gray-200 text-stone-950')}>
+			<body className={clsx(font.className, 'bg-gray-200 text-stone-950 selection:bg-blue-500 selection:text-white')}>
 				<div className='mx-auto max-w-screen-2xl bg-stone-50'>
 					{children}
 				</div>
