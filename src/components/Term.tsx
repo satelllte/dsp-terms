@@ -2,10 +2,10 @@ import Link from 'next/link';
 import {ExternalLinkIcon} from '@radix-ui/react-icons';
 import type {Term as TermProps} from '@/data/terms';
 
-export const Term = ({id, term, expansion, paragraphs, links}: TermProps) => {
+export const Term = ({id, title, expansion, paragraphs, links}: TermProps) => {
 	return (
 		<div>
-			<h3 id={id} className='pb-3 text-3xl font-semibold md:text-4xl'>{term}</h3>
+			<h3 id={id} className='pb-3 text-3xl font-semibold md:text-4xl'>{title}</h3>
 			{expansion && <div className='pb-2 text-sm italic'>{expansion}</div>}
 			{paragraphs.map(paragraph => {
 				return (

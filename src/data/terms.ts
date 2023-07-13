@@ -1,7 +1,7 @@
 export const terms: Term[] = [
 	{
 		id: 'adc',
-		term: 'ADC',
+		title: 'ADC',
 		expansion: 'Analog to Digital Converter',
 		paragraphs: [
 			'Converts a continuous time signal to a digital signal by sampling.',
@@ -9,7 +9,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'adsr',
-		term: 'ADSR',
+		title: 'ADSR',
 		expansion: 'Attack / Decay / Sustain / Release',
 		paragraphs: [
 			'By default this refers to a volume envelope.',
@@ -18,7 +18,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'aliasing',
-		term: 'Aliasing',
+		title: 'Aliasing',
 		paragraphs: [
 			'A type of distortion that results when reconstructing an analog signal from samples.',
 			'A set of samples could technically describe more than one signal. These are referred to as aliases, which is where the name comes from.',
@@ -33,7 +33,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'all-pass',
-		term: 'All-pass',
+		title: 'All-pass',
 		paragraphs: [
 			'Formally a filter, but it doesn\'t change the frequency content, only the phase.',
 			'All frequencies pass through unaffected, hence the name "all-pass".',
@@ -44,7 +44,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'amplitude',
-		term: 'Amplitude',
+		title: 'Amplitude',
 		paragraphs: [
 			'Peak value of a sinusoid.',
 			'Can be positive or negative, it\'s just "how far from 0".',
@@ -52,7 +52,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'dac',
-		term: 'DAC',
+		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
 		paragraphs: [
 			'Converts a digital signal to a continuous time, analog signal.',
@@ -61,7 +61,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'daw',
-		term: 'DAW',
+		title: 'DAW',
 		expansion: 'Digital Audio Workstation',
 		paragraphs: [
 			'An audio or music program that lets you run plugins and arrange multiple audio or MIDI tracks.',
@@ -70,7 +70,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'psola',
-		term: 'PSOLA',
+		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
 		paragraphs: [
 			'Speech synthesis technique invented in 1986 that chops audio into overlapping chunks. The distance between chunks can be increased or decreased to change pitch or repeated/deleted to change duration.',
@@ -84,7 +84,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'simd',
-		term: 'SIMD',
+		title: 'SIMD',
 		expansion: 'Single instruction, multiple data.',
 		paragraphs: [
 			'A type of optimized CPU instruction that operates on a vector instead of a single piece of data.',
@@ -94,7 +94,7 @@ export const terms: Term[] = [
 
 export type Term = {
 	id: string;
-	term: string;
+	title: string;
 	expansion?: string;
 	paragraphs: string[];
 	links?: TermExternalLink[];
