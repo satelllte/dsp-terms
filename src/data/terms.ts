@@ -84,6 +84,16 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'autocorrelation',
+		title: 'Autocorrelation',
+		paragraphs: [
+			'Also known as Autocorrelation Function (ACF).',
+			'Similarity of a signal to a copy of itself with a variable amount of lag.',
+			'Cross correlation of a signal with itself, to provide analytical insight into its periodicity and tempo.',
+			'Autocorrelation is symmetric, which means that you only need to take the first half of values when calculating it.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
