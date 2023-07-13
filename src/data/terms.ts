@@ -3,14 +3,12 @@ type Term = {
 	term: string;
 	expansion?: string;
 	paragraphs: string[];
-	// eslint-disable-next-line no-warning-comments
-	externalLinks?: TermExternalLink[]; // TODO: rename to 'links'
+	links?: TermExternalLink[];
 };
 
 type TermExternalLink = {
 	href: string;
-	// eslint-disable-next-line no-warning-comments
-	label: string; // TODO: rename to 'title'
+	title: string;
 };
 
 export const terms: Term[] = [
@@ -39,10 +37,10 @@ export const terms: Term[] = [
 			'A set of samples could technically describe more than one signal. These are referred to as aliases, which is where the name comes from.',
 			'The common occurrence of this is trying to represent a signal higher than your nyquist frequency.',
 		],
-		externalLinks: [
+		links: [
 			{
 				href: 'http://www.slack.net/~ant/bl-synth/3.nyquist.html',
-				label: 'The Nyquist Limit',
+				title: 'The Nyquist Limit',
 			},
 		],
 	},
@@ -90,10 +88,10 @@ export const terms: Term[] = [
 		paragraphs: [
 			'Speech synthesis technique invented in 1986 that chops audio into overlapping chunks. The distance between chunks can be increased or decreased to change pitch or repeated/deleted to change duration.',
 		],
-		externalLinks: [
+		links: [
 			{
 				href: 'https://wiki.aalto.fi/pages/viewpage.action?pageId=155477136',
-				label: 'PSOLA - Aalto University Wiki',
+				title: 'PSOLA - Aalto University Wiki',
 			},
 		],
 	},
