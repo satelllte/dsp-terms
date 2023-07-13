@@ -10,12 +10,8 @@ describe('terms', () => {
 	});
 
 	they('have no duplicates', () => {
-		const ids = terms.map(({id}) => {
-			return id;
-		});
-		const titles = terms.map(({title}) => {
-			return title;
-		});
+		const ids = terms.map(({id}) => id);
+		const titles = terms.map(({title}) => title);
 		expect((new Set(ids)).size).toEqual(ids.length);
 		expect((new Set(titles)).size).toEqual(titles.length);
 	});

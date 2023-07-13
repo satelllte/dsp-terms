@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 	description: 'Digital signal processing terminology',
 };
 
-const RootLayout = ({
+export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
-}) => {
+}) {
 	return (
 		<html lang='en'>
 			<body className={clsx(font.className, 'bg-gray-200 text-stone-950')}>
@@ -25,6 +25,4 @@ const RootLayout = ({
 			</body>
 		</html>
 	);
-};
-
-export default RootLayout;
+}
