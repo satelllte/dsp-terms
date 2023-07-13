@@ -76,6 +76,14 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'attenuation',
+		title: 'Attenuation',
+		paragraphs: [
+			'Reduction in the magnitude of a signal.',
+			'The opposite of amplification.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
