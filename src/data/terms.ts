@@ -59,6 +59,15 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'angular-frequency',
+		title: 'Angular Frequency',
+		paragraphs: [
+			'omega ω',
+			'ω is used to represent radians per time unit, either per second or per sample depending on context.',
+			'When dealing with seconds, it\'s a factor of 2π larger than Hertz (1Hz = 2πω).',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
