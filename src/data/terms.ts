@@ -175,7 +175,7 @@ export const terms: Term[] = [
 	{
 		id: 'simd',
 		title: 'SIMD',
-		expansion: 'Single instruction, multiple data.',
+		expansion: 'Single instruction, multiple data',
 		paragraphs: [
 			'A type of optimized CPU instruction that operates on a vector instead of a single piece of data.',
 		],

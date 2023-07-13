@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import {ExternalLinkIcon} from '@radix-ui/react-icons';
 import type {Term as TermProps} from '@/data/terms';
+import clsx from 'clsx';
 
 export function Term({id, title, expansion, paragraphs, links}: TermProps) {
 	return (
 		<div>
-			<h3 id={id} className='pb-3 text-3xl font-semibold md:text-4xl'>{title}</h3>
-			{expansion && <div className='pb-2 text-sm italic'>{expansion}</div>}
+			<h3 id={id} className={clsx('text-3xl font-semibold md:text-4xl', !expansion && 'pb-3')}>
+				{title}
+			</h3>
+			{expansion && <div className='pb-3 text-sm font-semibold'>{expansion}</div>}
 			{paragraphs.map(paragraph => (<p key={paragraph}>{paragraph}</p>))}
 			{links?.map(({href, title}) => (
 				<Link
