@@ -94,6 +94,13 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'band-pass-filter',
+		title: 'Band-pass filter',
+		paragraphs: [
+			'A filter that lets through all frequencies within a certain range.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
