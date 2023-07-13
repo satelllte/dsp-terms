@@ -109,6 +109,29 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'biquad',
+		title: 'Biquad',
+		expansion: 'Bi-quadratic Filter',
+		paragraphs: [
+			'The name comes from the fact that it\'s transfer function is a ratio of two quadratic functions.',
+			'A two-pole, two-zero filter.',
+		],
+		links: [
+			{
+				href: 'https://www.earlevel.com/main/2012/11/26/biquad-c-source-code/',
+				title: 'Biquad C++ source Code - EarLevel Engineering',
+			},
+			{
+				href: 'https://www.earlevel.com/main/2010/12/20/biquad-calculator/',
+				title: 'Biquad calculator - EarLevel Engineering',
+			},
+			{
+				href: 'https://ccrma.stanford.edu/~jos/filters/Biquad_Software_Implementations.html',
+				title: 'Biquad in C - Center for Computer Research in Music and Acoustics',
+			},
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',

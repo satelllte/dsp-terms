@@ -12,7 +12,7 @@ export function Term({id, title, expansion, paragraphs, links}: TermProps) {
 				<Link
 					key={href}
 					href={href}
-					className='inline-flex items-baseline gap-1'
+					className='flex items-baseline gap-1 pt-1'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
