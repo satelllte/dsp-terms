@@ -52,7 +52,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'analog-modelling',
-		title: 'Analog Modelling',
+		title: 'Analog modelling',
 		paragraphs: [
 			'Digital algorithms that simulate the behavior of electronic circuits (resistors, capacitors, op amps).',
 			'There are various flavors of white box (literal model of each component and their interactions) and black box (modelling the response).',
@@ -60,7 +60,7 @@ export const terms: Term[] = [
 	},
 	{
 		id: 'angular-frequency',
-		title: 'Angular Frequency',
+		title: 'Angular frequency',
 		paragraphs: [
 			'omega (ω)',
 			'ω is used to represent radians per time unit, either per second or per sample depending on context.',
@@ -98,6 +98,14 @@ export const terms: Term[] = [
 		title: 'Band-pass filter',
 		paragraphs: [
 			'A filter that lets through all frequencies within a certain range.',
+		],
+	},
+	{
+		id: 'bilinear-transform',
+		title: 'Bilinear transform',
+		paragraphs: [
+			'A way to convert an analog (continuous time) filter into a discrete digital filter.',
+			'The transformation is achieved by mapping the s-plane (continuous-time domain) to the z-plane (discrete-time domain).',
 		],
 	},
 	{
