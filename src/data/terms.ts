@@ -23,7 +23,7 @@ export const terms: Term[] = [
 		],
 	},
 	{
-		id: 'arsr',
+		id: 'adsr',
 		term: 'ADSR',
 		expansion: 'Attack / Decay / Sustain / Release',
 		paragraphs: [
