@@ -1,19 +1,19 @@
 export const terms: Term[] = [
 	{
-		id: 'adc',
-		term: 'ADC',
-		expansion: 'Analog to Digital Converter',
-		paragraphs: [
-			'Converts a continuous time signal to a digital signal by sampling.',
-		],
-	},
-	{
 		id: 'adsr',
 		term: 'ADSR',
 		expansion: 'Attack / Decay / Sustain / Release',
 		paragraphs: [
 			'By default this refers to a volume envelope.',
 			'Note that attack/decay/release are times and sustain is a level.',
+		],
+	},
+	{
+		id: 'adc',
+		term: 'ADC',
+		expansion: 'Analog to Digital Converter',
+		paragraphs: [
+			'Converts a continuous time signal to a digital signal by sampling.',
 		],
 	},
 	{
