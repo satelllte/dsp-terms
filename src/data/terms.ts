@@ -191,6 +191,15 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'signal',
+		title: 'Signal',
+		paragraphs: [
+			'"A way to convey information"',
+			'Amplitude as a function of time.',
+			'On a computer, signals are discrete.',
+		],
+	},
+	{
 		id: 'simd',
 		title: 'SIMD',
 		expansion: 'Single instruction, multiple data',

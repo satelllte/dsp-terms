@@ -958,16 +958,6 @@ The sample rate determines the highest frequency that can be stored. See [Nyquis
 The additional spectral components above and below a [modulated](#modulation) frequency, such as in [FM synthesis](#frequency-modulation-synthesis).
 
 
-
-## [Signal](#signal)
-
-"A way to convey information"
-
-Amplitude as a function of time.
-
-On a computer, signals are [discrete](#discrete).
-
-
 ## [Significand](#significand)
 *Significant digits*
 
