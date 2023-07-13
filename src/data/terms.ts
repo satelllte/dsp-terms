@@ -1,16 +1,3 @@
-type Term = {
-	id: string;
-	term: string;
-	expansion?: string;
-	paragraphs: string[];
-	links?: TermExternalLink[];
-};
-
-type TermExternalLink = {
-	href: string;
-	title: string;
-};
-
 export const terms: Term[] = [
 	{
 		id: 'adc',
@@ -104,3 +91,16 @@ export const terms: Term[] = [
 		],
 	},
 ];
+
+export type Term = {
+	id: string;
+	term: string;
+	expansion?: string;
+	paragraphs: string[];
+	links?: TermExternalLink[];
+};
+
+type TermExternalLink = {
+	href: string;
+	title: string;
+};
