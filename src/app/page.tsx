@@ -26,6 +26,10 @@ const IndexPage = () => {
 					<TermRow>It&apos;s made by adding a feedforward delay and then subtracting a feedback delay — both using the same coefficients.</TermRow>
 					<TermRow>It was invented specifically to create a digital delay that doesn&apos;t impact the frequency response of a signal, like a comb filter does.</TermRow>
 				</Term>
+				<Term id='amplitude' term='Amplitude'>
+					<TermRow>Peak value of a sinusoid.</TermRow>
+					<TermRow>Can be positive or negative, it&apos;s just &quot;how far from 0&quot;.</TermRow>
+				</Term>
 				<Term id='dac' term='DAC' expansion='Digital to Analog Converter'>
 					<TermRow>Converts a digital signal to a continuous time, analog signal.</TermRow>
 					<TermRow>The opposite of an ADC.</TermRow>
