@@ -180,6 +180,15 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'cepstrum',
+		title: 'Cepstrum',
+		paragraphs: [
+			'The result of performing the inverse fourier transform of the logarithm of a spectrum.',
+			'Expresses the rate of change of spectrum over time, and is useful for investigating periodicity, presence of harmonics, etc.',
+			'The word "Cepstrum" has the first four letters of "Spectrum" reversed.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
