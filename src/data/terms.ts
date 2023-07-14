@@ -206,6 +206,14 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'coefficient',
+		title: 'Coefficient',
+		expansion: 'Multiplicative factor',
+		paragraphs: [
+			'A number that\'s used for scaling things, such as the magnitude of a signal.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
