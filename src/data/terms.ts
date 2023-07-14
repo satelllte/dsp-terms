@@ -101,6 +101,13 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'beat-frequency',
+		title: 'Beat frequency',
+		paragraphs: [
+			'Occurs when two waves with different frequencies overlap, causing a cycle of alternating constructive and destructive interference between waves.',
+		],
+	},
+	{
 		id: 'bilinear-transform',
 		title: 'Bilinear transform',
 		paragraphs: [

@@ -2,12 +2,6 @@
 
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
-## ~[Beats](#beats)~ Beat frequency
-
-~When two signals have slightly different frequencies~
-
-Occurs when two waves with different frequencies overlap, causing a cycle of alternating constructive and destructive interference between waves.
-
 ## [Causal-filter](#causal-filter)
 
 A filter whose output doesn't depend on any future inputs.
