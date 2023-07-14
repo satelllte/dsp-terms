@@ -46,7 +46,7 @@ describe('terms', () => {
 		});
 	});
 
-	describe('term[i]', () => {
+	describe('terms[i]', () => {
 		terms.forEach(term => {
 			testTerm(term);
 		});
@@ -92,8 +92,12 @@ const testTermTitle = (title: string) => {
 
 const testTermExpansion = (expansion?: string) => {
 	describe('term.expansion', () => {
-		it.skipIf(expansion === undefined)('is not empty (if defined)', () => {
-			expect(Boolean(expansion)).toEqual(true);
+		it('is not empty (if defined)', () => {
+			if (expansion === undefined) {
+				return;
+			}
+
+			expect(expansion.length > 0).toEqual(true);
 		});
 	});
 };
@@ -104,14 +108,35 @@ const testTermParagraphs = (paragraphs: TermParagraph[]) => {
 		they('are not empty', () => {
 			expect(paragraphs.length > 0).toEqual(true);
 		});
+		describe('paragraphs[i]', () => {
+			paragraphs.forEach(paragraph => {
+				testTermParagraph(paragraph);
+			});
+		});
+	});
+};
+
+const testTermParagraph = (paragraph: TermParagraph) => {
+	describe('term.paragraph', () => {
+		it('is not empty (when string)', () => {
+			if (typeof paragraph !== 'string') {
+				return;
+			}
+
+			expect(paragraph.length > 0).toEqual(true);
+		});
 	});
 };
 
 const testTermLinks = (links?: TermExternalLink[]) => {
 	const they = it;
 	describe('term.links', () => {
-		they.skipIf(!links)('are not empty (if defined)', () => {
-			expect(links && links.length > 0).toEqual(true);
+		they('are not empty (if defined)', () => {
+			if (links === undefined) {
+				return;
+			}
+
+			expect(links.length > 0).toEqual(true);
 		});
 	});
 };
