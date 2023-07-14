@@ -24,8 +24,8 @@ export function Term({id, title, expansion, paragraphs, links}: TermProps) {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<ExternalLinkIcon/>
-								{title}
+								<ExternalLinkIcon width={16} height={16} className='min-h-[16px] min-w-[16px]'/>
+								<span>{title}</span>
 							</Link>
 						</span>
 					))}
