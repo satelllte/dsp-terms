@@ -3,12 +3,6 @@
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
 
-## [Characteristic Curve](#characteristic-curve)
-*i/o curve*
-
-Amplitude plot of input to output.
-
-
 ## [Circular Buffer](#circular-buffer)
 *Ring Buffer*
 

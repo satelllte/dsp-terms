@@ -189,6 +189,14 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'characteristic-curve',
+		title: 'Characteristic Curve',
+		paragraphs: [
+			'I/O curve.',
+			'Amplitude plot of input to output.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
