@@ -1,10 +1,11 @@
 import {describe, expect, it} from 'vitest';
 import {terms, type Term, type TermParagraph, type TermExternalLink} from './terms';
 
+const ids = terms.map(({id}) => id);
+
 describe('terms', () => {
 	const they = it;
 
-	const ids = terms.map(({id}) => id);
 	const titles = terms.map(({title}) => title.toLowerCase());
 
 	they('have all ids sorted', () => {
@@ -25,25 +26,6 @@ describe('terms', () => {
 
 	they('have no duplicates in titles', () => {
 		expect((new Set(titles)).size).toEqual(titles.length);
-	});
-
-	they('have valid links to other terms', () => {
-		terms.forEach(({paragraphs}) => {
-			paragraphs.forEach(paragraph => {
-				if (typeof paragraph === 'string') {
-					return;
-				}
-
-				paragraph.forEach(p => { // eslint-disable-line max-nested-callbacks
-					if (typeof p === 'string') {
-						return;
-					}
-
-					const {id} = p;
-					expect(ids).toContainEqual(id);
-				});
-			});
-		});
 	});
 
 	describe('terms[i]', () => {
@@ -124,6 +106,22 @@ const testTermParagraph = (paragraph: TermParagraph) => {
 			}
 
 			expect(paragraph.length > 0).toEqual(true);
+		});
+
+		it('is valid (when complex paragraph)', () => {
+			if (typeof paragraph === 'string') {
+				return;
+			}
+
+			paragraph.forEach(paragraphPart => {
+				if (typeof paragraphPart === 'string') {
+					expect(paragraphPart.length > 0).toEqual(true);
+					return;
+				}
+
+				expect(ids.includes(paragraphPart.id)).toEqual(true); // Internal link id exists
+				expect(paragraphPart.title.length > 0).toEqual(true); // Internal link title is not empty
+			});
 		});
 	});
 };
