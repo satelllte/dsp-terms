@@ -261,6 +261,114 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'constructive-interference',
+		title: 'Constructive interference',
+		paragraphs: [
+			'When one wave is added to another and they contain similar frequencies, then their magnitudes add up when the waves crest together.',
+		],
+		links: [
+			{
+				href: 'https://byjus.com/physics/constructive-interference/',
+				title: 'Constructive Interference - Waves - Byju\'s',
+			},
+			{
+				href: 'https://astronomy.swin.edu.au/cosmos/c/Constructive+Interference',
+				title: 'Constructive Interference | COSMOS',
+			},
+			{
+				href: 'https://www.physicsclassroom.com/class/waves/Lesson-3/Interference-of-Waves',
+				title: 'Interference of Waves - Physics Tutorial',
+			},
+			{
+				href: 'https://study.com/academy/lesson/constructive-and-destructive-interference.html',
+				title: 'Constructive vs Destructive Interference | Definition & Overview',
+			},
+			{
+				href: 'https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm',
+				title: '5.2 Constructive and Destructive Interference - UConn Physics',
+			},
+		],
+	},
+	{
+		id: 'continuous-time',
+		title: 'Continuous time',
+		paragraphs: [
+			'Analog signal',
+		],
+	},
+	{
+		id: 'convolution',
+		title: 'Convolution',
+		paragraphs: [
+			'Operation where a signal gets combined with an another signal, usually an impulse response, to form a third signal.',
+			'Mathematically, the operator used is a star ∗ which can be confusing since the star * is used to represent multiplication in most programming languages.',
+			'Algorithmically, you slide a reversed version of the impulse response over the signal.',
+			'Convolution in the time domain is equal to multiplication in the frequency domain.',
+		],
+		links: [
+			{
+				href: 'https://www.dspguide.com/ch6/2.htm',
+				title: 'Convolution',
+			},
+			{
+				href: 'https://docs.juce.com/master/classdsp_1_1Convolution.html#details',
+				title: 'JUCE: Convolution Class Reference',
+			},
+		],
+	},
+	{
+		id: 'correlation',
+		title: 'Correlation',
+		paragraphs: [
+			'How similar 2 signals are to each other.',
+			'It is determined with the dot product.',
+			'See: autocorrelation and cross correlation.',
+		],
+		links: [
+			{
+				href: 'https://jackschaedler.github.io/circles-sines-signals/dotproduct2.html',
+				title: 'Dot Products and Correlation - Circles, Sines, and Signals - jackSchaedler',
+			},
+		],
+	},
+	{
+		id: 'cosine',
+		title: 'Cosine',
+		paragraphs: [
+			'Given an angle in a triangle, cosine is equal to ratio of the length of the side adjacent to the length of the hypotenuse.',
+			'On the unit circle (where the radius of 1 is the hypotenuse), it\'s the value of the x coordinate.',
+			'One of the three main trigonometric functions.',
+			'A cosine wave starts 1/4 cycle (90 degrees) earlier than a sine wave.',
+		],
+	},
+	{
+		id: 'cross-correlation',
+		title: 'Cross correlation',
+		expansion: 'Sliding Dot Product',
+		paragraphs: [
+			'A way to measure the similarity of 2 signals.',
+			'Multiply the 2 signals together sample by sample while sliding one of them along the other (increasing lag).',
+			'Mathematically very similar to convolution, which uses the same sliding dot product method but with one signal reversed in time.',
+		],
+	},
+	{
+		id: 'cutoff',
+		title: 'Cutoff frequency',
+		expansion: 'Corner frequency, Break frequency',
+		paragraphs: [
+			'Generic term for a chosen frequency where the signal above or below this will be changed.',
+			'Low-pass, High-pass and Band-pass filters all rely on and typically offer the ability to change this frequency.',
+		],
+	},
+	{
+		id: 'cycle',
+		title: 'Cycle',
+		paragraphs: [
+			'One complete iteration of a waveform.',
+			'One cycle often has its period expressed as 360 degrees or 2π radians.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
