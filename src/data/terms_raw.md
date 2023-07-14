@@ -3,50 +3,6 @@
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
 
-## [Comb Filter](#comb-filter)
-
-What happens when you add a delayed copy of a signal to itself, whether it be [feedforward](#feedforward-delay) or [feedback](#feedback-delay).
-
-Named because the resulting [frequency response](#frequency-response) visually resembles a comb.
-
----
-
-1. https://ccrma.stanford.edu/~jos/pasp/Feedback_Comb_Filters.html
-
-
-##[Combination Tone](#combination-tone)
-
-
-
-## [Complex Number](#complex-number)
-
-A complex number is a way to store and use two numbers (a [vector](#vector)) as if they were one.
-
-It's a number that consists of a real part and an an imaginary part bundled together in one package such as `5 + 4i`. The imaginary part is the part with the imaginary unit `i`.
-
-In dsp and electrical engineering, `j` is  used as the imaginary unit instead of `i` (which often denotes current).
-
-Complex numbers are graphed on the [complex plane](#complex-plane).
-
-
-## [Complex Sinusoid](#complex-sinusoid)
-
-A signal's magnitude and phase stored together as one complex number.
-
-Can be thought of as two sinusoids, a cosine and sine of the same frequency, offset by 90 degrees in phase.
-
-Storing these two values in a complex number makes calculations and manipulation simpler in the frequency domain.
-
----
-
-1. https://ccrma.stanford.edu/~jos/filters/Plotting_Complex_Sinusoids_Circular.html
-
-
-## [Conjugation](#conjugation)
-
-Change the sign of the imaginary part of a [complex number](#complex-number).
-
-
 ## [Constructive Interference](#constructive-interference)
 
 When one wave is added to another and they contain similar frequencies, then their magnitudes add up when the waves crest together.

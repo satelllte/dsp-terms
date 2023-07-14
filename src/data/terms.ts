@@ -214,6 +214,53 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'comb-filter',
+		title: 'Comb Filter',
+		paragraphs: [
+			'What happens when you add a delayed copy of a signal to itself, whether it be feedforward or feedback.',
+			'Named because the resulting frequency response visually resembles a comb.',
+		],
+		links: [
+			{
+				href: 'https://ccrma.stanford.edu/~jos/pasp/Feedback_Comb_Filters.html',
+				title: 'Feedback Comb Filters - Center for Computer Research in Music and Acoustics',
+			},
+		],
+	},
+	{
+		id: 'complex-number',
+		title: 'Complex Number',
+		paragraphs: [
+			'A complex number is a way to store and use two numbers (a vector) as if they were one.',
+			'It\'s a number that consists of a real part and an an imaginary part bundled together in one package such as `5 + 4i`. The imaginary part is the part with the imaginary unit `i`.',
+			'In dsp and electrical engineering, `j` is  used as the imaginary unit instead of `i` (which often denotes current).',
+			'Complex numbers are graphed on the complex plane.',
+		],
+		links: [],
+	},
+	{
+		id: 'complex-sinusoid',
+		title: 'Complex Sinusoid',
+		paragraphs: [
+			'A signal\'s magnitude and phase stored together as one complex number.',
+			'Can be thought of as two sinusoids, a cosine and sine of the same frequency, offset by 90 degrees in phase.',
+			'Storing these two values in a complex number makes calculations and manipulation simpler in the frequency domain.',
+		],
+		links: [
+			{
+				href: 'https://ccrma.stanford.edu/~jos/filters/Plotting_Complex_Sinusoids_Circular.html',
+				title: 'Complex Sinusoids as Circular Motion - Center for Computer Research in Music and Acoustics',
+			},
+		],
+	},
+	{
+		id: 'conjugation',
+		title: 'Conjugation',
+		paragraphs: [
+			'Change the sign of the imaginary part of a complex number.',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
