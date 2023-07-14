@@ -115,10 +115,6 @@ A [filter](filter) that lets through all frequencies higher than a certain ([cut
 See also: [Low-pass filter](#lowpass).
 
 
-## [Hilbert Transform](#hilbert-transform)
-
-
-
 ## [Impulse](#impulse)
 *Unit Impulse*
 *Unit Impulse function*
