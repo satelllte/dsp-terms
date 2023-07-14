@@ -3,14 +3,6 @@
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
 
-## [Circular Buffer](#circular-buffer)
-*Ring Buffer*
-
-A fixed-size block of memory that once you get to the end of reading/writing to it, you wrap back around to the start.
-
-An implementation is a [delay line](#delay-line).
-
-
 ## [Coefficient](#coefficient)
 *Multiplicative Factor*
 

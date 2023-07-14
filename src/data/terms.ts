@@ -197,6 +197,15 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'circular-buffer',
+		title: 'Circular buffer',
+		expansion: 'Ring buffer',
+		paragraphs: [
+			'A fixed-size block of memory that once you get to the end of reading/writing to it, you wrap back around to the start.',
+			'An implementation is a delay line',
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
