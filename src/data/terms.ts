@@ -166,6 +166,20 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'causal-filter',
+		title: 'Causal filter',
+		paragraphs: [
+			'A filter whose output doesn\'t depend on any future inputs.',
+			'Basically all real time filters are causal.',
+		],
+		links: [
+			{
+				href: 'https://www.dsprelated.com/freebooks/filters/Causal_Recursive_Filters.html',
+				title: 'Causal Recursive Filters - DSPRelated',
+			},
+		],
+	},
+	{
 		id: 'dac',
 		title: 'DAC',
 		expansion: 'Digital to Analog Converter',
