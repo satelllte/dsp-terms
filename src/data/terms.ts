@@ -655,6 +655,106 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'fourier-transform',
+		title: 'Fourier transform',
+		paragraphs: [
+			'A mathematical transform that converts a function of amplitude over time (a signal) into complex numbers containing magnitude and phase.',
+			'It\'s used as a noun for a signal\'s representation in the frequency domain.',
+			'The transform is reversible. See inverse Fourier transform.',
+		],
+	},
+	{
+		id: 'fractional-delay-line',
+		title: 'Fractional delay line',
+		paragraphs: [
+			'A simple digital delay line implementation might support delay times that are integer number of samples long, such as 10 samples.',
+			'A fractional delay line uses linear interpolation to support delay times that fall between an integer number of samples, such as 10.687 samples long.',
+		],
+	},
+	{
+		id: 'frame',
+		title: 'Frame',
+		paragraphs: [
+			'A series of samples, batched together for processing.',
+			'Think of the buffer size on your favorite DAW.',
+		],
+	},
+	{
+		id: 'frequency',
+		title: 'Frequency',
+		paragraphs: [
+			'Number of cycles per time period, usually per second. See: Hertz.',
+		],
+	},
+	{
+		id: 'frequency-domain',
+		title: 'Frequency Domain',
+		expansion: 'Z domain',
+		paragraphs: [
+			'The spectrum of a signal.',
+			'Representing a signal by specifying magnitude of each frequency for specific buckets of time.',
+			'What the Discrete Fourier Transform or other Fourier flavors result in.',
+			'The \'opposite\' of time domain.',
+		],
+	},
+	{
+		id: 'frequency-modulation-synthesis',
+		title: 'Frequency Modulation Synthesis',
+		expansion: 'FM synthesis, FM, Phase Modulation',
+		paragraphs: [
+			'One signal called the \'modulator\' changes the pitch of another signal called the \'carrier\' to create rich harmonic and inharmonic sounds.',
+			'Technically it\'s the phase of a carrier signal that\'s modulated by the modulator, so FM synthesis is actually phase modulation (not frequency modulation).',
+		],
+	},
+	{
+		id: 'frequency-response',
+		title: 'Frequency Response',
+		paragraphs: [
+			'How a filter responds in the frequency domain to an impulse.',
+			'The impulse response characterizes a system in the time domain.',
+		],
+	},
+	{
+		id: 'gibbs-phenomenon',
+		title: 'Gibbs Phenomenon',
+		paragraphs: [
+			'The Fourier series sucks for square, saw, and other waves that aren\'t smoothly interpolating between values.',
+			'Trying to model these types of waves with results in overshoot and rippling, causing ringing.',
+		],
+	},
+	{
+		id: 'group-delay',
+		title: 'Group Delay',
+		expansion: 'Envelope Delay',
+		paragraphs: [
+			'Delay in amplitude, as a function of frequency.',
+			'The derivative (rate of change) of the phase of a filter.',
+		],
+	},
+	{
+		id: 'haas-effect',
+		title: 'Haas Effect',
+		paragraphs: [
+			'When two identical signals are mixed together with a delay of under 30ms, it appears as a tone. When it\'s >= 30ms, it appears as two distinct signals.',
+		],
+	},
+	{
+		id: 'hard-sync',
+		title: 'Hard Sync',
+		paragraphs: [
+			'One oscillator causes second oscillator to reset its cycle on the first\'s schedule, forcing their frequencies to be the same.',
+			'Assuming the original frequency of the second oscillator isn\'t the exact same as the first, the result is more complex waveforms with desirable harmonics.',
+		],
+	},
+	{
+		id: 'hertz',
+		title: 'Hertz',
+		expansion: 'Hz',
+		paragraphs: [
+			'Cycles per second. A 440Hz waveform has 440 periods happening per second.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
