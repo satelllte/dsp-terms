@@ -236,7 +236,6 @@ export const terms: Term[] = [
 			'In dsp and electrical engineering, `j` is  used as the imaginary unit instead of `i` (which often denotes current).',
 			'Complex numbers are graphed on the complex plane.',
 		],
-		links: [],
 	},
 	{
 		id: 'complex-sinusoid',
@@ -394,7 +393,6 @@ export const terms: Term[] = [
 			'In the DSP domain, DC refers to whether the signal adds up to 0.',
 			'If the mean amplitude of a signal is 0, there\'s no DC bias, and it\'s DC balanced.',
 		],
-		links: [],
 	},
 	{
 		id: 'decibel',
@@ -473,7 +471,6 @@ export const terms: Term[] = [
 		paragraphs: [
 			'When two waves are superimposed and have similar frequency components, cancellation happens when the crest of one wave aligns with the trough of another.',
 		],
-		links: [],
 	},
 	{
 		id: 'difference-equation',
@@ -483,7 +480,6 @@ export const terms: Term[] = [
 			'y[n] = 1.5y[n-1] + 0.5x[n-2] + 0.5x[n]',
 			'Discrete version of a differential equation.',
 		],
-		links: [],
 	},
 	{
 		id: 'discontinuity',
@@ -492,7 +488,6 @@ export const terms: Term[] = [
 			'A jump in a signal from one sample to another.',
 			'Often will be reproduced as a click sound when played back.',
 		],
-		links: [],
 	},
 	{
 		id: 'discrete',
@@ -504,7 +499,6 @@ export const terms: Term[] = [
 			'There are discrete forms of many signal processing functions, such as the discrete Fourier transform.',
 			'In a math context, it\'s convention to refer to discrete units of time with square brackets like so x[n].',
 		],
-		links: [],
 	},
 	{
 		id: 'discrete-fourier-transform',
@@ -536,7 +530,6 @@ export const terms: Term[] = [
 			'The mathematical (theoretical) form of Fourier transform used to analyze a function that is being sampled regularly over time.',
 			'DFT is a practical implementation for computers.',
 		],
-		links: [],
 	},
 	{
 		id: 'dot-product',

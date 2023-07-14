@@ -1,5 +1,5 @@
 import {describe, expect, it} from 'vitest';
-import {terms} from './terms';
+import {terms, type Term, type TermParagraph, type TermExternalLink} from './terms';
 
 describe('terms', () => {
 	const they = it;
@@ -45,4 +45,64 @@ describe('terms', () => {
 			});
 		});
 	});
+
+	describe('term[i]', () => {
+		terms.forEach(term => {
+			testTerm(term);
+		});
+	});
 });
+
+const testTerm = (term: Term) => {
+	testTermId(term.id);
+	testTermTitle(term.title);
+	testTermParagraphs(term.paragraphs);
+	testTermLinks(term.links);
+};
+
+const testTermId = (id: string) => {
+	describe('term.id', () => {
+		it('is not empty', () => {
+			expect(id.length > 0).toEqual(true);
+		});
+		it('is lowercased', () => {
+			expect(id.toLowerCase() === id).toEqual(true);
+		});
+		it('contains only a-z letters and dash "-" sign', () => {
+			expect(/^([a-z]|-)+$/.test(id)).toEqual(true);
+		});
+		it('does not contain two dashes "-" in a row', () => {
+			expect(id.includes('--')).toEqual(false);
+		});
+		it('starts and ends with a-z letter', () => {
+			expect(/^[a-z]/.test(id)).toEqual(true);
+			expect(/[a-z]$/.test(id)).toEqual(true);
+		});
+	});
+};
+
+const testTermTitle = (title: string) => {
+	describe('term.title', () => {
+		it('is not empty', () => {
+			expect(title.length > 0).toEqual(true);
+		});
+	});
+};
+
+const testTermParagraphs = (paragraphs: TermParagraph[]) => {
+	const they = it;
+	describe('term.paragraphs', () => {
+		they('are not empty', () => {
+			expect(paragraphs.length > 0).toEqual(true);
+		});
+	});
+};
+
+const testTermLinks = (links?: TermExternalLink[]) => {
+	const they = it;
+	describe('term.links', () => {
+		they.skipIf(!links)('are not empty (if defined)', () => {
+			expect(links && links.length > 0).toEqual(true);
+		});
+	});
+};
