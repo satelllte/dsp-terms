@@ -3,17 +3,6 @@
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
 
-## [Floating Point](#floating-point)
-
-
-
-## [Frequency Modulation](#fm)
-
-
----
-1. https://ccrma.stanford.edu/software/snd/snd/fm.html
-
-
 ## [Fourier Transform](#fourier-transform)
 
 A mathematical transform that converts a function of [amplitude](#amplitude) over time (a [signal](#signal)) into [complex](#complex-numbers) numbers containing [magnitude](#magnitude) and [phase](#phase).
