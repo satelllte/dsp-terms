@@ -151,7 +151,6 @@ const testTermLink = (link: TermExternalLink) => {
 			expect(link.title.length > 0).toEqual(true);
 		});
 		it('constains valid absolute href', () => {
-			console.debug('link.href: ', link.href);
 			expect(isAbsoluteUrl(link.href)).toEqual(true);
 		});
 	});
