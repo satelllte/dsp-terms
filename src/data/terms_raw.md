@@ -67,10 +67,6 @@ The Fourier series sucks for square, saw, and other waves that aren't smoothly i
 Trying to model these types of waves with results in overshoot and rippling, causing ringing.
 
 
-## [Glitch](#glitch)
-*Discontinuity*
-
-
 ## [Group Delay](#group-delay)
 *Envelope Delay*
 
