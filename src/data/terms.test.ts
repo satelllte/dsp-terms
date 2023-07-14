@@ -56,6 +56,7 @@ describe('terms', () => {
 const testTerm = (term: Term) => {
 	testTermId(term.id);
 	testTermTitle(term.title);
+	testTermExpansion(term.expansion);
 	testTermParagraphs(term.paragraphs);
 	testTermLinks(term.links);
 };
@@ -85,6 +86,14 @@ const testTermTitle = (title: string) => {
 	describe('term.title', () => {
 		it('is not empty', () => {
 			expect(title.length > 0).toEqual(true);
+		});
+	});
+};
+
+const testTermExpansion = (expansion?: string) => {
+	describe('term.expansion', () => {
+		it.skipIf(expansion === undefined)('is not empty (if defined)', () => {
+			expect(Boolean(expansion)).toEqual(true);
 		});
 	});
 };
