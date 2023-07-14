@@ -3,11 +3,6 @@
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
 
-## [Heterodyne](#heterodyne)
-
-Related to [beats](#beats).
-
-
 # [High-pass filter](#high_pass_filter)
 *HPF*
 
