@@ -557,6 +557,104 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'energy',
+		title: 'Energy',
+		paragraphs: [
+			'For a discrete signal, energy is the sum of the squared magnitudes of a signal.',
+		],
+	},
+	{
+		id: 'fast-fourier-transform',
+		title: 'Fast Fourier Transform',
+		expansion: 'FFT',
+		paragraphs: [
+			'Algorithm invented in 1965 making it efficient to compute the discrete Fourier transform.',
+			'The FFT is built to treat input as if it loops, so except for the case where the input signal is an integer number of cycles, you\'ll need to use a window function to improve accuracy.',
+		],
+		links: [
+			{
+				href: 'https://www.ams.org/journals/mcom/1965-19-090/S0025-5718-1965-0178586-1/S0025-5718-1965-0178586-1.pdf',
+				title: 'An Algorithm for Machine Calculation of Complex Fourier Series',
+			},
+			{
+				href: 'https://www.earlevel.com/main/2002/08/31/a-gentle-introduction-to-the-fft/',
+				title: 'A Gentle Introduction to the FFT',
+			},
+			{
+				href: 'https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/',
+				title: 'An Interactive Guide To The Fourier Transform',
+			},
+		],
+	},
+	{
+		id: 'feedback-delay',
+		title: 'Feedback Delay',
+		expansion: 'Feedback Comb Filter, Recirculating Delay',
+		paragraphs: [
+			'A copy of the output is added back to the input signal after a certain time.',
+			'Considered an IIR filter because given an input signal, it theoretically keeps producing output forever.',
+			'The comb filter peaks produced by the feedback delay are tighter and more narrow and spiky than the feedforward delay.',
+		],
+	},
+	{
+		id: 'feedforward-delay',
+		title: 'Feedforward',
+		expansion: 'Feedforward Comb Filter, Non-recirculating',
+		paragraphs: [
+			'The simplest form of delay.',
+			'A copy of the input is added back to the input signal after a certain time.',
+			'Technically considered an FIR filter because when the input stops, the output stops.',
+		],
+	},
+	{
+		id: 'filter',
+		title: 'Filter',
+		paragraphs: [
+			'A formula or function for going from one signal to another.',
+		],
+		links: [
+			{
+				href: 'https://www.dsprelated.com/freebooks/filters/What_Filter.html',
+				title: 'What is a Filter? - DSPRelated.com',
+			},
+		],
+	},
+	{
+		id: 'finite-impulse-response',
+		title: 'Finite Impulse Response (FIR) Filter',
+		expansion: 'Feed Forward Filter',
+		paragraphs: [
+			'A type of filter where some frequencies go to zero.',
+			'These filters only exist digitally, analog filters are all IIR.',
+			'Named because the impulse response is finite and the filter is stable, no feedback is possible.',
+			'Example: A normal, non-feedbacking delay. When the input stops, the output stops (after the delay line empties out).',
+		],
+		links: [
+			{
+				href: 'https://dspguru.com/dsp/faqs/fir/basics/',
+				title: 'FIR Basics - DSPGuru',
+			},
+		],
+	},
+	{
+		id: 'float',
+		title: 'Float',
+		expansion: 'Floating point number',
+		paragraphs: [
+			'The default variable type in most DSP libraries.',
+			'A 32 bit floating point uses 23 bits to represent the significand (significant digits), 8 bits for the exponent, and 1 sign bit.',
+			'The name refers to the fact that the decimal in the number "floats" — it can be placed anywhere in the significant digits via specifying the exponent value.',
+			'They are also called single precision, as the double uses twice the number of significant digits.',
+			'CPU speed is often measured in FLOPS, or floating points operations per second.',
+		],
+		links: [
+			{
+				href: 'https://web.stanford.edu/class/cs101/bits-bytes.html',
+				title: 'Bits and Bytes - Stanford CS101',
+			},
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
