@@ -427,12 +427,6 @@ export const terms: Term[] = [
 			'Breaking apart a signal into components, for example, into sine waves.',
 			'This is what the DFT does.',
 		],
-		links: [
-			{
-				href: '#dft',
-				title: 'DFT',
-			},
-		],
 	},
 	{
 		id: 'delay-line',
@@ -457,12 +451,6 @@ export const terms: Term[] = [
 		paragraphs: [
 			'The name for an output somewhere in a delay line.',
 			'Multiple taps are used to get multiple echoes out of one delay line.',
-		],
-		links: [
-			{
-				href: '#delay-line',
-				title: 'delay line',
-			},
 		],
 	},
 	{

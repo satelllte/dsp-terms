@@ -138,5 +138,33 @@ const testTermLinks = (links?: TermExternalLink[]) => {
 
 			expect(links.length > 0).toEqual(true);
 		});
+
+		describe.skipIf(!links)('term.links[i]', () => {
+			links?.forEach(link => {
+				testTermLink(link);
+			});
+		});
 	});
+};
+
+const testTermLink = (link: TermExternalLink) => {
+	describe('term.link', () => {
+		it('contains non-empty title', () => {
+			expect(link.title.length > 0).toEqual(true);
+		});
+		it('constains valid absolute href', () => {
+			console.debug('link.href: ', link.href);
+			expect(isAbsoluteUrl(link.href)).toEqual(true);
+		});
+	});
+};
+
+const isAbsoluteUrl = (url: string): boolean => {
+	try {
+		const _url = new URL(url);
+		const isValidProtocol = _url.protocol === 'http:' || _url.protocol === 'https:';
+		return isValidProtocol;
+	} catch {
+		return false;
+	}
 };
