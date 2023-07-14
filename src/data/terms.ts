@@ -387,6 +387,195 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'dc',
+		title: 'DC',
+		expansion: 'Direct current',
+		paragraphs: [
+			'In the DSP domain, DC refers to whether the signal adds up to 0.',
+			'If the mean amplitude of a signal is 0, there\'s no DC bias, and it\'s DC balanced.',
+		],
+		links: [],
+	},
+	{
+		id: 'decibel',
+		title: 'Decibel',
+		expansion: 'dB',
+		paragraphs: [
+			'A generic unit to measure relative sound volume logarithmically.',
+			'The unit is relative to the quietest measurable sound for humans.',
+			'An increase in +3dB doubles the amount of sound energy.',
+			'Human hearing is able to perceive around 120dB worth of dynamic range.',
+			'There are many other related units such as dBV, dBu, dB SPL.',
+		],
+		links: [
+			{
+				href: 'https://www.bhphotovideo.com/explora/pro-audio/tips-and-solutions/a-fun-and-good-humored-attempt-at-demystifying-10-dbv-and-4-dbu',
+				title: 'Demystifying dBV and dBu - B&H Explora',
+			},
+			{
+				href: 'https://stason.org/TULARC/entertainment/audio/pro/3-3-What-is-the-difference-between-dBv-dBu-dBV-dBm-dB.html',
+				title: 'What is the difference between dBV, dBu, dBV, dBm, dB? - TULARC',
+			},
+			{
+				href: 'https://en.wikipedia.org/wiki/Absolute_threshold_of_hearing',
+				title: 'Absolute threshold of hearing - Wikipedia',
+			},
+		],
+	},
+	{
+		id: 'decomposition',
+		title: 'Decomposition',
+		paragraphs: [
+			'Breaking apart a signal into components, for example, into sine waves.',
+			'This is what the DFT does.',
+		],
+		links: [
+			{
+				href: '#dft',
+				title: 'DFT',
+			},
+		],
+	},
+	{
+		id: 'delay-line',
+		title: 'Delay Line',
+		expansion: 'Delay',
+		paragraphs: [
+			'A delay.',
+			'The name used to refer to a line of electrical components that introduced a phase change between input and output signal. A bucket brigade is a classic analog example.',
+			'Digitally, delay lines are implemented with a circular buffer.',
+			'A building block used in comb filters and waveguide synthesis.',
+		],
+		links: [
+			{
+				href: 'https://en.wikipedia.org/wiki/Analog_delay_line',
+				title: 'Analog delay line - Wikipedia',
+			},
+		],
+	},
+	{
+		id: 'delay-tap',
+		title: 'Delay Tap',
+		paragraphs: [
+			'The name for an output somewhere in a delay line.',
+			'Multiple taps are used to get multiple echoes out of one delay line.',
+		],
+		links: [
+			{
+				href: '#delay-line',
+				title: 'delay line',
+			},
+		],
+	},
+	{
+		id: 'destructive-interference',
+		title: 'Destructive Interference',
+		paragraphs: [
+			'When two waves are superimposed and have similar frequency components, cancellation happens when the crest of one wave aligns with the trough of another.',
+		],
+		links: [],
+	},
+	{
+		id: 'difference-equation',
+		title: 'Difference Equation',
+		paragraphs: [
+			'The actual equation used to implement a filter, one sample at a time.',
+			'y[n] = 1.5y[n-1] + 0.5x[n-2] + 0.5x[n]',
+			'Discrete version of a differential equation.',
+		],
+		links: [],
+	},
+	{
+		id: 'discontinuity',
+		title: 'Discontinuity',
+		paragraphs: [
+			'A jump in a signal from one sample to another.',
+			'Often will be reproduced as a click sound when played back.',
+		],
+		links: [],
+	},
+	{
+		id: 'discrete',
+		title: 'Discrete',
+		expansion: 'Discrete Time, Digital Signal',
+		paragraphs: [
+			'A signal is discrete when it is broken down into a time series and represented by specific separate numbers called samples.',
+			'A signal must be discrete to be stored in a computer.',
+			'There are discrete forms of many signal processing functions, such as the discrete Fourier transform.',
+			'In a math context, it\'s convention to refer to discrete units of time with square brackets like so x[n].',
+		],
+		links: [],
+	},
+	{
+		id: 'discrete-fourier-transform',
+		title: 'Discrete Fourier Transform',
+		paragraphs: [
+			'A practical implementation of the Discrete Time Fourier Transform that computers can perform.',
+			'Converting a discrete signal from the time domain to the frequency domain.',
+			'This is how we get the z-transform.',
+			'There are a million things named Something Something Fourier Transform. This category just means it\'s in the digital domain.',
+			'It\'s called a transform because it takes a function of one variable (time) and transforms it to a function of another (frequency).',
+			'It results in complex numbers.',
+			'Its implementation performs the inner product of the signal with sine waves of different frequencies to check which sine waves are present.',
+		],
+		links: [
+			{
+				href: 'https://www.youtube.com/watch?v=GW6654dYTD8',
+				title: 'Discrete Fourier Transform - Julius Smith',
+			},
+			{
+				href: 'https://ccrma.stanford.edu/~jos/mdft/mdft.html',
+				title: 'The Mathematics of the Discrete Fourier Transform (DFT) - Julius Smith',
+			},
+		],
+	},
+	{
+		id: 'discrete-time-fourier-transform',
+		title: 'Discrete Time Fourier Transform',
+		paragraphs: [
+			'The mathematical (theoretical) form of Fourier transform used to analyze a function that is being sampled regularly over time.',
+			'DFT is a practical implementation for computers.',
+		],
+		links: [],
+	},
+	{
+		id: 'dot-product',
+		title: 'Dot Product',
+		expansion: 'Inner Product',
+		paragraphs: [
+			'A way to multiply two vectors.',
+			'Walking through each element n of a vector/array and multiplying it by the same numbered element n of another vector and then summing those together.',
+			'One of the two types of vector multiplication, the other being cross product.',
+		],
+		links: [
+			{
+				href: 'https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/vector-dot-product-and-vector-length',
+				title: 'Vector dot product and vector length - Khan Academy',
+			},
+			{
+				href: 'https://jackschaedler.github.io/circles-sines-signals/sine_wave_properties.html',
+				title: 'Sine Wave Properties - Jack Schaedler',
+			},
+		],
+	},
+	{
+		id: 'double',
+		title: 'Double',
+		paragraphs: [
+			'A variable type similar to a float that uses 64 bits to store the value.',
+			'A double has "double precision," which means it uses twice as many bits to store a value than a float does. A double uses 52 bits for the significand (significant digits), 11 bits for the exponent, and 1 for the sign.',
+		],
+	},
+	{
+		id: 'downsample',
+		title: 'Downsample',
+		paragraphs: [
+			'To decrease the sampling rate of a signal.',
+			'To prevent aliasing, it\'s common to low pass filter the signal before downsampling. These 2 operations together are called "decimation".',
+			'Opposite of upsample.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
