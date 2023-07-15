@@ -755,6 +755,121 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'high-pass-filter',
+		title: 'High-pass filter',
+		paragraphs: [
+			'A filter that lets through all frequencies higher than a certain cutoff frequency.',
+		],
+	},
+	{
+		id: 'impulse',
+		title: 'Impulse',
+		paragraphs: [
+			'A signal that is 0 everywhere except at one sample, where it is 1.',
+			'When fed through a filter, it produces an impulse response.',
+		],
+	},
+	{
+		id: 'impulse-response',
+		title: 'Impulse Response',
+		paragraphs: [
+			'How something (like a filter) responds when you send an impulse through it.',
+			'Characterizes a system in the time domain whereas a transfer function characterizes it in the frequency domain.',
+		],
+		links: [
+			{
+				href: 'https://www.recordingblogs.com/wiki/impulse-response',
+				title: 'Recording Blogs - Impulse Response',
+			},
+		],
+	},
+	{
+		id: 'infinite-impulse-response-filter',
+		title: 'Infinite Impulse Response (IIR) Filter',
+		paragraphs: [
+			'A recursive filter that relies on previous inputs and outputs, making some frequencies go to infinity.',
+			'This is what 99.9% of analog filters are, including all the fancy names like Butterworth, Chebyshev, Moog Ladder Filter.',
+			'Named because the output could theoretically keep going on forever, even after the input stops, so the impulse response is technically infinite.',
+			'Example: A feedback delay theoretically will always output some smaller and smaller signal, even after the input signal stops.',
+		],
+		links: [
+			{
+				href: 'https://ccrma.stanford.edu/~jos/pasp/Feedback_Comb_Filters.html',
+				title: 'Feedback Comb Filters - Stanford CCRMA',
+			},
+		],
+	},
+	{
+		id: 'inner-product',
+		title: 'Inner product',
+		paragraphs: [
+			'The main thing that the discrete Fourier transform does.',
+			'Take two signals, walk through each element, multiply them together, then sum up the products to get a single value.',
+			'It measures the similarity, or amount of correlation, two signals have.',
+		],
+		links: [
+			{
+				href: 'https://jackschaedler.github.io/circles-sines-signals/dotproduct2.html',
+				title: 'Circle, Sines, and Signals - Inner Product',
+			},
+			{
+				href: 'https://ccrma.stanford.edu/~jos/mdft/Inner_Product.html',
+				title: 'Stanford CCRMA - Inner Product',
+			},
+			{
+				href: 'https://en.wikipedia.org/wiki/Dot_product#Complex_vectors',
+				title: 'Wikipedia - Dot Product',
+			},
+		],
+	},
+	{
+		id: 'interference',
+		title: 'Interference',
+		paragraphs: [
+			'An complicated way to say that an signal has combined with another signal, producing a third signal.',
+			'When that third resultant signal has less amplitude than the original, we call it \'destructive\'. When the third signal has more amplitude, we call it \'constructive.\'',
+		],
+	},
+	{
+		id: 'interpolation',
+		title: 'Interpolation',
+		paragraphs: [
+			'Creating in-between samples from existing samples via an algorithm.',
+			'This can be seen as upsampling.',
+			'Linear Interpolation is a computationally cheap and popular method.',
+		],
+	},
+	{
+		id: 'inverse-fourier-transform',
+		title: 'Inverse Fourier Transform',
+		paragraphs: [
+			'Mathematical process that converts complex values representing a signal in the frequency domain to a time domain.',
+			'The opposite of the Fourier Transform.',
+		],
+	},
+	{
+		id: 'lag',
+		title: 'Lag',
+		paragraphs: [
+			'A quantity of time in samples used in functions such as autocorrelation.',
+		],
+	},
+	{
+		id: 'laplace-transform',
+		title: 'Laplace transform',
+		paragraphs: [
+			'Going from analog to digital domain to produce a difference equation.',
+		],
+	},
+	{
+		id: 'latency',
+		title: 'Latency',
+		paragraphs: [
+			'A delay by a certain amount of time.',
+			'In a DAW context, this is the amount of time the DAW is taking to process playback, often specified in powers of 2, such as 64, 128, 512, etc.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
