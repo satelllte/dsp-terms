@@ -35,7 +35,7 @@ export default function IndexPage() {
 			<Container>
 				<footer className='pb-8 pt-16 md:pt-24'>
 					<div className='flex items-center justify-between'>
-						<div className='text-lg'>Designed by @satelllte</div>
+						<div>Designed by @satelllte</div>
 						<Link href='https://github.com/satelllte/dsp-terms' target='_blank' rel='noopener noreferrer'>
 							<GitHubLogoIcon width={32} height={32}/>
 						</Link>
