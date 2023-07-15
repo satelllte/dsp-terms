@@ -1401,8 +1401,8 @@ export const terms: Term[] = [
 	{
 		id: 'zero-order-hold',
 		title: 'Zero Order Hold',
+		expansion: 'ZOH',
 		paragraphs: [
-			'ZOH',
 			'The most naive way to reconstruct a continuous signal from a set of sampled values.',
 			'Not actually how a DAC works these days, but people imagine it to be [1].',
 		],
