@@ -6,24 +6,14 @@
 
 This repository is mostly a fork of [sudara/dspjargon](https://github.com/sudara/dspjargon), built into a webpage.
 
-## Local development
+## Contributing
 
-Switch to required Node.js version:
+- Do you want to add a new term?
+- Do you want to correct a term definition?
+- Have any ideas?
 
-```sh
-nvm use
-```
+Feel free to contribute or log an issue 👽
 
-Install Node.js modules:
+## Development
 
-```sh
-npm ci
-```
-
-Start local development server:
-
-```sh
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in the browser.
+See [DEVELOPMENT](./DEVELOPMENT.md) guide.
