@@ -2,32 +2,6 @@
 
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
-## [Rolloff](#rolloff)
-
-The slope / steepness of a [filter's](#filter) frequency response
-
-The units are usually expressed in [db](#decibel) per octave.
-
-Also used as a noun to specify the transition region between a [passband](#passband) and a [stopband](#stopband).
-
-
-## [Sample](#sample)
-
-A single value from a [discrete](#discrete) signal.
-
-Samples are usually evenly spaced in time, each one represents a value at that point in time. 
-
-
-## [Sample Rate](#sample_rate)
-*Sampling frequency*
-*Fs*
-
-How many [discrete](#discrete) [samples](#sample) per second.
-
-CD is 44,100 samples per second. Film is 48,000 samples per second.
-
-The sample rate determines the highest frequency that can be stored. See [Nyquist](#nyquist).
-
 ## [Sideband](#sideband)
 
 The additional spectral components above and below a [modulated](#modulation) frequency, such as in [FM synthesis](#frequency-modulation-synthesis).

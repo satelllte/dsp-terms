@@ -1144,6 +1144,33 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'rolloff',
+		title: 'Rolloff',
+		paragraphs: [
+			'The slope / steepness of a filter\'s frequency response',
+			'The units are usually expressed in db per octave.',
+			'Also used as a noun to specify the transition region between a passband and a stopband.',
+		],
+	},
+	{
+		id: 'sample',
+		title: 'Sample',
+		paragraphs: [
+			'A single value from a discrete signal.',
+			'Samples are usually evenly spaced in time, each one represents a value at that point in time.',
+		],
+	},
+	{
+		id: 'sample-rate',
+		title: 'Sample Rate',
+		paragraphs: [
+			'Sampling frequency.',
+			'How many discrete samples per second.',
+			'CD is 44,100 samples per second. Film is 48,000 samples per second.',
+			'The sample rate determines the highest frequency that can be stored. See Nyquist.',
+		],
+	},
+	{
 		id: 'signal',
 		title: 'Signal',
 		paragraphs: [
