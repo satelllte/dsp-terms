@@ -6,9 +6,23 @@ import './style.css';
 // eslint-disable-next-line new-cap
 const font = Montserrat({subsets: ['latin']});
 
+const title = 'DSP Terms';
+const description = 'Digital signal processing terminology';
+
 export const metadata: Metadata = {
-	title: 'DSP Terms',
-	description: 'Digital signal processing terminology',
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+		siteName: title,
+		images: ['/logo.png'],
+	},
+	twitter: {
+		title,
+		description,
+		images: ['/logo.png'],
+	},
 };
 
 export default function RootLayout({
