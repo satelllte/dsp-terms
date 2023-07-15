@@ -2,13 +2,9 @@
 
 **[dsp-terms.vercel.app](https://dsp-terms.vercel.app)**
 
-〰️〰️〰️
+<img src="./public/logo.png">
 
-Digital signal processing (DSP) terminology
-
-〰️〰️〰️
-
-This repository is a fork of [sudara/dspjargon](https://github.com/sudara/dspjargon), built into a webpage.
+This repository is mostly a fork of [sudara/dspjargon](https://github.com/sudara/dspjargon), built into a webpage.
 
 ## Local development
 
