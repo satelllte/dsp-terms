@@ -1081,6 +1081,31 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'polar-form',
+		title: 'Polar Form',
+		paragraphs: [
+			'A notation for complex numbers that uses sine and cosine instead of real and imaginary numbers.',
+		],
+	},
+	{
+		id: 'poles',
+		title: 'Poles',
+		paragraphs: [
+			'The name comes from plotting the magnitude of the transfer function as a function of z.',
+			'Something something denominator approaching infinity.',
+			'A point, or a value of z for which the equation is equal to infinity is called a pole. A point, or a value z for which the equation is equal to zero is called a zero. The location of poles and zeros can tell you a lot about the frequency response of a filter.',
+		],
+	},
+	{
+		id: 'power',
+		title: 'Power',
+		paragraphs: [
+			'Power is the rate of energy per time unit.',
+			'In a signal, power is proportional to amplitude squared.',
+			'Unlike the analog world, which measures power in Watts, in dsp, power doesn\'t have a physical unit.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
@@ -1092,6 +1117,30 @@ export const terms: Term[] = [
 				href: 'https://wiki.aalto.fi/pages/viewpage.action?pageId=155477136',
 				title: 'PSOLA - Aalto University Wiki',
 			},
+		],
+	},
+	{
+		id: 'quadrature-oscillator',
+		title: 'Quadrature Oscillator',
+		paragraphs: [
+			'An oscillator that produces values for both sine and cosine.',
+		],
+	},
+	{
+		id: 'radian',
+		title: 'Radian',
+		paragraphs: [
+			'A unit of measure, like degrees but expressed with π.',
+			'1 radian is the angle made at the center of a circle by an arc whose length is equal to the radius of the circle.',
+			'A full circle has 2π radians.',
+			'Rad for short. So rad.',
+		],
+	},
+	{
+		id: 'rectification',
+		title: 'Rectification',
+		paragraphs: [
+			'Absolute value.',
 		],
 	},
 	{
