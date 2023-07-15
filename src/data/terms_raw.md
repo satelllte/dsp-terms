@@ -2,45 +2,6 @@
 
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
-## [Non-linear](#non-linear)
-
-Describes a [filter](#filter) or a system where the
-
-Distortion. Compression.
-
-Harmonics are created.
-
-[Characteristic curve](#characteristic-curve) is no longer just a line.
-
----
-
-1. https://www.dspguide.com/ch5/4.htm
-
-
-## [Nyquist](#nyquist)
-*Folding Frequency*
-
-Half of the [sampling rate](#sample_rate).
-
-The highest frequency that a digital signal can store at a given sample rate.
-
-Generated frequencies that are higher than the nyquist will "fold" over and [alias](#alias).
-
-
-## [Operator](#operator)
-
-A building block of [FM synthesis](#frequency-modulation-synthesis), comprised of an input, an [oscillator](#oscillator), an amplifier and an output.
-
-
-
-## [Order](#order)
-*Transfer Function Order*
-
-Max of numerator or denominator orders.
-
-Filter order = number of poles or zeros, whichever is greater.
-
-
 ## [Orthogonal](#orthogonal)
 
 Perpendicular.

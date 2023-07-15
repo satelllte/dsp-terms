@@ -965,6 +965,41 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'non-linear',
+		title: 'Non-linear',
+		paragraphs: [
+			'Describes a filter or a system where the',
+			'Distortion. Compression.',
+			'Harmonics are created.',
+			'Characteristic curve is no longer just a line.',
+		],
+	},
+	{
+		id: 'nyquist',
+		title: 'Nyquist',
+		paragraphs: [
+			'Half of the sampling rate.',
+			'The highest frequency that a digital signal can store at a given sample rate.',
+			'Generated frequencies that are higher than the nyquist will \'fold\' over and alias.',
+		],
+	},
+	{
+		id: 'operator',
+		title: 'Operator',
+		paragraphs: [
+			'A building block of FM synthesis, comprised of an input, an oscillator, an amplifier and an output.',
+		],
+	},
+	{
+		id: 'order',
+		title: 'Order',
+		expansion: 'Transfer Function Order',
+		paragraphs: [
+			'Max of numerator or denominator orders.',
+			'Filter order = number of poles or zeros, whichever is greater.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
