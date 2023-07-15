@@ -870,6 +870,101 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'linear',
+		title: 'Linear',
+		paragraphs: [
+			'A filter or system that obeys the superposition principle.',
+			'Opposite of non-linear.',
+		],
+	},
+	{
+		id: 'linear-feedback-shift-register',
+		title: 'Linear Feedback Shift Register',
+		expansion: 'LFSR',
+		paragraphs: [
+			'An efficient way of generating deterministic, pseudo-random numbers.',
+			'A set of individual bits that shift to the right on each iteration (shift register), where the leftmost \'input\' bit is created by combining other bits, often via XOR.',
+		],
+		links: [
+			{
+				href: 'https://www.youtube.com/watch?v=Ks1pw1X22y4',
+				title: 'Video: Linear Feedback Shift Register',
+			},
+		],
+	},
+	{
+		id: 'linear-interpolation',
+		title: 'Linear Interpolation',
+		expansion: 'Lerp',
+		paragraphs: [
+			'Finding a value somewhere between two points.',
+			'When you have a discrete signal, you sometimes want to find an arbitrary value between two samples. You can do this by drawing a line between them.',
+		],
+	},
+	{
+		id: 'linear-phase',
+		title: 'Linear Phase',
+		paragraphs: [
+			'A type of filter (usually FIR) where all frequency components are delayed in time by a constant amount.',
+			'It avoids phase distortion.',
+		],
+		links: [
+			{
+				href: 'https://www.dspguide.com/ch19/4.htm',
+				title: 'Linear Phase - DSP Guide',
+			},
+		],
+	},
+	{
+		id: 'linear-time-invariant-filter',
+		title: 'Linear Time Invariant (LTI) Filter',
+		paragraphs: [
+			'This is a category of filters that are:',
+			'1. Linear, which means the sum of two signals going through a filter results in the same output as when they go through the filter individually and get summed afterwards.',
+			'2. Time Invariant, which means a sample going through the filter is always going to have the same output no matter WHEN it goes through.',
+		],
+	},
+	{
+		id: 'logarithm',
+		title: 'Logarithm',
+		expansion: 'log',
+		paragraphs: [
+			'Inverse mathematical function to taking the exponent of a number.',
+			'Almost all human perception, including hearing occurs on a logarithmic scale.',
+		],
+		links: [
+			{
+				href: 'https://en.wikipedia.org/wiki/Weber–Fechner_law',
+				title: 'Weber-Fechner Law - Wikipedia',
+			},
+		],
+	},
+	{
+		id: 'low-pass-filter',
+		title: 'Low-pass Filter',
+		expansion: 'LPF',
+		paragraphs: [
+			'A filter that lets through all frequencies lower than a certain (cutoff) frequency.',
+		],
+	},
+	{
+		id: 'magnitude',
+		title: 'Magnitude',
+		paragraphs: [
+			'Absolute value of some measured amount.',
+			'For example, a DFT bin has a magnitude.',
+			'Unlike amplitude, it\'s always a positive value.',
+		],
+	},
+	{
+		id: 'mantissa',
+		title: 'Mantissa',
+		paragraphs: [
+			'Historically, the digits after the decimal point in a logarithm.',
+			'Also used as a synonym to significand.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
