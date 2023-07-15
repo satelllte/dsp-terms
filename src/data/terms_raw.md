@@ -2,21 +2,9 @@
 
 The file contains a copy of definitions from https://github.com/sudara/dspjargon/tree/master/definitions, which aren't in the landing page yet.
 
-## [Pink Noise](#pink-noise)
-*1/f noise*
-
-
 ## [Polar Form](#polar_form)
 
 A notation for complex numbers that uses sine and cosine instead of real and imaginary numbers.
-
-
-## [Pole Zero Analysis](#pole-zero-analysis)
-
-
----
-
-1. https://www.dsprelated.com/freebooks/filters/Pole_Zero_Analysis_I.html
 
 
 ## [Poles](#poles)
@@ -43,11 +31,6 @@ In a signal, power is proportional to amplitude squared.
 Unlike the analog world, which measures power in Watts, in dsp, power doesn't have a physical unit. 
 
 
-## [Power Spectral Density](#power_spectral_density)
-*Power Spectrum*
-
-
-
 ## [Quadrature Oscillator](#quadrature-oscillator)
 
 An [oscillator](oscillator) that produces values for both [sine](sine) and [cosine](cosine).
@@ -68,9 +51,6 @@ Rad for short. So rad.
 ## [Rectification](#rectification)
 
 Absolute value.
-
-
-## [Recursive Filter](#recursive)
 
 
 ## [Rolloff](#rolloff)
@@ -98,11 +78,6 @@ How many [discrete](#discrete) [samples](#sample) per second.
 CD is 44,100 samples per second. Film is 48,000 samples per second.
 
 The sample rate determines the highest frequency that can be stored. See [Nyquist](#nyquist).
-
-
-## [Sawtooth](#sawtooth)
-
-
 
 ## [Sideband](#sideband)
 
@@ -162,9 +137,6 @@ Data in the [frequency domain](#frequency-domain).
 See: [Cepstrum](#cepstrum).
 
 
-## [State Space Modeling](#state-space-modeling)
-
-
 ## [Stopband](#stopband)
 
 A range of frequencies that do not pass through a [filter](#filer) at all, or are fully [attenuated](#attenuation) by the filter.
@@ -186,10 +158,6 @@ When a filter or system obeys this principle, it's called [linear](#linear).
 Something that produces one or more outputs when zero or more inputs.
 
 Often used as a synonym to a [filter](#filter).
-
-
-## [Taps](#taps)
-
 
 
 ## [Time Domain](#time-domain)
