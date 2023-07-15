@@ -1263,6 +1263,165 @@ export const terms: Term[] = [
 			'Often used as a synonym to a filter.',
 		],
 	},
+	{
+		id: 'time-domain',
+		title: 'Time Domain',
+		paragraphs: [
+			'An array of numbers, each number representing the value of that signal at that particular moment in time.',
+			'The default way we store a signal and convert it from electronic information into digital information.',
+			'Mathematically, when the independent variable is a time index.',
+		],
+	},
+	{
+		id: 'time-invariant',
+		title: 'Time Invariant',
+		paragraphs: [
+			'A system that behaves the same at any point in time.',
+			'A sample going through a filter is always going to have the same output no matter WHEN it goes through.',
+		],
+	},
+	{
+		id: 'time-series',
+		title: 'Time Series',
+		paragraphs: [
+			'A collection of values taken at equally spaced points in time.',
+		],
+	},
+	{
+		id: 'transfer-function',
+		title: 'Transfer function',
+		paragraphs: [
+			'Frequency response of a filter. How a filter behaves in the in the frequency domain.',
+			'Ratio of the output frequency response to the input frequency response. How much of the input "transfers" to the output?',
+			'Calculated by taking the z-transform of both sides of the difference equation.',
+		],
+	},
+	{
+		id: 'unity-gain',
+		title: 'Unity gain',
+		paragraphs: [
+			'Input equals output.',
+			'Mostly used in audio engineering.',
+		],
+	},
+	{
+		id: 'upsample',
+		title: 'Upsample',
+		paragraphs: [
+			'Increase the sampling rate, usually with some method of interpolation.',
+			'Opposite of downsample.',
+		],
+	},
+	{
+		id: 'vector',
+		title: 'Vector',
+		paragraphs: [
+			'In math, a vector is a magnitude and an angle on a plane.',
+			'In C++ (and some other languages), this is an "array" of values, for example, a collection of floats. Unlike an array, there can be a variable number of values.',
+		],
+	},
+	{
+		id: 'wave',
+		title: 'Wave',
+		paragraphs: [
+			'Most of the time people mean signal.',
+			'Sometimes they mean an audio file, such as WAV, which is an audio file format standard.',
+		],
+	},
+	{
+		id: 'wave-shaping',
+		title: 'Wave Shaping',
+		paragraphs: [
+			'A fancy name for processing a signal, usually with the intention of adding extra harmonics or distortion.',
+		],
+	},
+	{
+		id: 'waveform',
+		title: 'Waveform',
+		paragraphs: [
+			'Two meanings:',
+			'1. The shape of a single cycle of a periodic signal such as a sine, sawtooth, or square, for example visualized on an oscilloscope.',
+			'2. A signal\'s amplitude graphed over time, as you would see in a DAW.',
+		],
+	},
+	{
+		id: 'waveguide',
+		title: 'Waveguide',
+		paragraphs: [
+			'A network of nodes that delay/allpass the signal and send out signal in both directions (to/from) the node. The total energy in the network is lossless (the same) at any given point in time.',
+		],
+	},
+	{
+		id: 'window-function',
+		title: 'Window Function',
+		paragraphs: [
+			'Windowing',
+			'Smooths out the input to an FFT to increase accuracy, as the FFT assumes the input is one cycle of a periodic signal.',
+			'It fades in and out the input signal so that it\'s loopable without discontinuities.',
+		],
+	},
+	{
+		id: 'xor',
+		title: 'XOR',
+		paragraphs: [
+			'Exclusive OR',
+			'Bitwise XOR',
+			'Inspect the individual bits of a number, returning 1 when the bits are different from each other and 0 when the bits are the same (both 1 or both 0).',
+			'The caret ^ is used in most computer languages including C++ and Javascript.',
+		],
+	},
+	{
+		id: 'z',
+		title: 'Z',
+		paragraphs: [
+			'"Z" is a complex variable used to represent "some angular frequency" when working in the frequency domain.',
+			'It is normally defined as:',
+			'z = e^{jωt}',
+			'See angular frequency.',
+		],
+	},
+	{
+		id: 'z-plane',
+		title: 'Z-plane',
+		paragraphs: [
+			'Complex plane',
+			'A way to graph complex numbers, usually z, where the x-axis representing the real part (Re) and the y-axis representing the imaginary part (Im).',
+		],
+	},
+	{
+		id: 'z-transform',
+		title: 'Z-transform',
+		paragraphs: [
+			'Maps a function of n (discrete time such as in a filter), to a function of z in the frequency domain.',
+			'This is the type of thing that a Fourier transform does.',
+			'It\'s the discrete time version of the Laplace transform.',
+		],
+	},
+	{
+		id: 'zero-order-hold',
+		title: 'Zero Order Hold',
+		paragraphs: [
+			'ZOH',
+			'The most naive way to reconstruct a continuous signal from a set of sampled values.',
+			'Not actually how a DAC works these days, but people imagine it to be [1].',
+		],
+	},
+	{
+		id: 'zero-padding',
+		title: 'Zero Padding',
+		paragraphs: [
+			'Adding zeros at the end of a signal.',
+			'This is common to do during DFT when the signal length is shorter than the window size.',
+		],
+	},
+	{
+		id: 'zero-phase-windowing',
+		title: 'Zero-phase Windowing',
+		paragraphs: [
+			'A technique used when computing the FFT where the signal is split in half and zeros are added in the middle of the signal.',
+			'This gives the benefit of increasing the fidelity of the FFT while keeping the signal as symmetrical as possible.',
+		],
+	},
 ];
 
 export type Term = {
