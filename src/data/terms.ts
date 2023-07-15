@@ -1000,6 +1000,87 @@ export const terms: Term[] = [
 		],
 	},
 	{
+		id: 'orthogonal',
+		title: 'Orthogonal',
+		paragraphs: [
+			'Perpendicular.',
+			['Dot product', {id: 'dot-product', title: ' is zero.'}],
+			'Sine and Cosine are orthogonal.',
+		],
+		links: [
+			{
+				href: 'https://www.dsprelated.com/freebooks/mdft/Orthogonality.html',
+				title: 'https://www.dsprelated.com/freebooks/mdft/Orthogonality.html',
+			},
+			{
+				href: 'https://jackschaedler.github.io/circles-sines-signals/sine_wave_properties.html',
+				title: 'https://jackschaedler.github.io/circles-sines-signals/sine_wave_properties.html',
+			},
+		],
+	},
+	{
+		id: 'passband',
+		title: 'Passband',
+		paragraphs: [
+			'A range of frequencies that will pass through untouched by a filter.',
+			'The other frequencies will either be in the stopband or in the rolloff',
+		],
+	},
+	{
+		id: 'period',
+		title: 'Period',
+		expansion: 'Periodic Time',
+		paragraphs: [
+			'How long a cycle of a waveform takes, in time or samples.',
+			'Sometimes used interchangeably with cycle but technically the period of is the duration in time of 1 cycle.',
+			'Reciprocal of frequency. One cycle often has its period expressed as 360 degrees or 2π radians.',
+			'Real signals aren\'t usually periodic.',
+		],
+	},
+	{
+		id: 'periodic-signal',
+		title: 'Periodic signal',
+		paragraphs: [
+			'A signal that repeats itself regularly and therefore has pitch.',
+			'Generated sine, saw, square waves are good examples.',
+			'Wavetable synthesis stores one cycle of a waveform and uses it to generate periodic waveforms.',
+		],
+	},
+	{
+		id: 'phase-angle',
+		title: 'Phase Angle',
+		expansion: 'theta, θ, phase, angle',
+		paragraphs: [
+			'Phase is the position in the cycle of a waveform. The phase angle is a fraction of a full cycle of 360 degrees or 2π radians.',
+			'One of the two components of a signal in the frequency domain, the other being magnitude.',
+			'θ (lowercase theta) is used as the variable to represent the angle in math.',
+		],
+	},
+	{
+		id: 'phase-distortion',
+		title: 'Phase Distortion',
+		paragraphs: [
+			'A filter that\'s not linear phase introduces different delays for different frequency components.',
+			'The shape of the waveform changes.',
+		],
+	},
+	{
+		id: 'phase-shift',
+		title: 'Phase Shift',
+		paragraphs: [
+			'The offset or difference in phase of two waveforms.',
+			'A cosine wave is a sine wave shifted π/2 radians "left" earlier',
+		],
+	},
+	{
+		id: 'phasor',
+		title: 'Phasor',
+		expansion: 'Sinor, Complexor',
+		paragraphs: [
+			'A complex number storing amplitude, frequency, and phase.',
+		],
+	},
+	{
 		id: 'psola',
 		title: 'PSOLA',
 		expansion: 'Pitch Synchronous Overlap and Add',
