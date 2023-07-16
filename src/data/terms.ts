@@ -1011,11 +1011,11 @@ export const terms: Term[] = [
 		links: [
 			{
 				href: 'https://www.dsprelated.com/freebooks/mdft/Orthogonality.html',
-				title: 'https://www.dsprelated.com/freebooks/mdft/Orthogonality.html',
+				title: 'Orthogonality - DSPRelated',
 			},
 			{
 				href: 'https://jackschaedler.github.io/circles-sines-signals/sine_wave_properties.html',
-				title: 'https://jackschaedler.github.io/circles-sines-signals/sine_wave_properties.html',
+				title: 'Circles Sines and Signals - Jack Schaedler',
 			},
 		],
 	},
