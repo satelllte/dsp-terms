@@ -7,3 +7,4 @@ plugins:
 semi: true
 singleQuote: true
 jsxSingleQuote: true
+bracketSpacing: false
