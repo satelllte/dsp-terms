@@ -1,10 +1,10 @@
-import { type Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import {type Metadata} from 'next';
+import {Montserrat} from 'next/font/google';
 import clsx from 'clsx';
 import './style.css';
 
 // eslint-disable-next-line new-cap
-const font = Montserrat({ subsets: ['latin'] });
+const font = Montserrat({subsets: ['latin']});
 
 const title = 'DSP Terms';
 const description = 'Digital signal processing terminology';
@@ -25,11 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='en'>
       <body

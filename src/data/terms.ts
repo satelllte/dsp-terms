@@ -165,7 +165,7 @@ export const terms: Term[] = [
       'Delay lines are implemented with buffers',
       [
         'Most of ',
-        { title: 'DAW', id: 'daw' },
+        {title: 'DAW', id: 'daw'},
         "'s have input and output buffers to help ensure artifact-free and CPU-overload free performance.",
       ],
     ],
@@ -324,9 +324,9 @@ export const terms: Term[] = [
       'It is determined with the dot product.',
       [
         'See: ',
-        { id: 'autocorrelation', title: 'autocorrelation' },
+        {id: 'autocorrelation', title: 'autocorrelation'},
         ' and ',
-        { id: 'cross-correlation', title: 'cross correlation' },
+        {id: 'cross-correlation', title: 'cross correlation'},
         '.',
       ],
     ],
@@ -381,7 +381,7 @@ export const terms: Term[] = [
     expansion: 'Digital to Analog Converter',
     paragraphs: [
       'Converts a digital signal to a continuous time, analog signal.',
-      ['The opposite of an ', { title: 'ADC', id: 'adc' }, '.'],
+      ['The opposite of an ', {title: 'ADC', id: 'adc'}, '.'],
     ],
   },
   {
@@ -670,7 +670,7 @@ export const terms: Term[] = [
       "It's used as a noun for a signal's representation in the frequency domain.",
       [
         'The transform is reversible. See ',
-        { id: 'inverse-fourier-transform', title: 'Inverse Fourier transform' },
+        {id: 'inverse-fourier-transform', title: 'Inverse Fourier transform'},
         '.',
       ],
     ],
@@ -696,7 +696,7 @@ export const terms: Term[] = [
     title: 'Frequency',
     paragraphs: [
       'Number of cycles per time period, usually per second.',
-      ['See: ', { id: 'hertz', title: 'Hertz' }, '.'],
+      ['See: ', {id: 'hertz', title: 'Hertz'}, '.'],
     ],
   },
   {
@@ -1017,7 +1017,7 @@ export const terms: Term[] = [
     title: 'Orthogonal',
     paragraphs: [
       'Perpendicular.',
-      ['Dot product', { id: 'dot-product', title: ' is zero.' }],
+      ['Dot product', {id: 'dot-product', title: ' is zero.'}],
       'Sine and Cosine are orthogonal.',
     ],
     links: [
@@ -1178,7 +1178,7 @@ export const terms: Term[] = [
       'CD is 44,100 samples per second. Film is 48,000 samples per second.',
       [
         'The sample rate determines the highest frequency that can be stored. See ',
-        { id: 'nyquist', title: 'Nyquist' },
+        {id: 'nyquist', title: 'Nyquist'},
         '.',
       ],
     ],
@@ -1248,7 +1248,7 @@ export const terms: Term[] = [
     paragraphs: [
       'A noun referring to what the Fourier transform produces, the magnitude and phase of each of the frequency components.',
       'Data in the frequency domain.',
-      ['See: ', { id: 'cepstrum', title: 'Cepstrum' }, '.'],
+      ['See: ', {id: 'cepstrum', title: 'Cepstrum'}, '.'],
     ],
   },
   {
@@ -1387,7 +1387,7 @@ export const terms: Term[] = [
       '"Z" is a complex variable used to represent "some angular frequency" when working in the frequency domain.',
       'It is normally defined as:',
       'z = e^{jωt}',
-      ['See ', { id: 'angular-frequency', title: 'angular frequency' }, '.'],
+      ['See ', {id: 'angular-frequency', title: 'angular frequency'}, '.'],
     ],
   },
   {

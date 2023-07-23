@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 import {
   terms,
   type Term,
@@ -6,12 +6,12 @@ import {
   type TermExternalLink,
 } from './terms';
 
-const ids = terms.map(({ id }) => id);
+const ids = terms.map(({id}) => id);
 
 describe('terms', () => {
   const they = it;
 
-  const titles = terms.map(({ title }) => title.toLowerCase());
+  const titles = terms.map(({title}) => title.toLowerCase());
 
   they('have all ids sorted', () => {
     for (let i = 1; i < ids.length; i++) {

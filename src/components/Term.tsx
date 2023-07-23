@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import Link from 'next/link';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
-import { LinkToTerm } from '@/components/LinkToTerm';
-import type { TermParagraph, Term as TermProps } from '@/data/terms';
+import {ExternalLinkIcon} from '@radix-ui/react-icons';
+import {LinkToTerm} from '@/components/LinkToTerm';
+import type {TermParagraph, Term as TermProps} from '@/data/terms';
 
-export function Term({ id, title, expansion, paragraphs, links }: TermProps) {
+export function Term({id, title, expansion, paragraphs, links}: TermProps) {
   return (
     <div>
       <h3
@@ -24,7 +24,7 @@ export function Term({ id, title, expansion, paragraphs, links }: TermProps) {
       ))}
       {links && (
         <div className='flex flex-col pt-2'>
-          {links.map(({ href, title }) => (
+          {links.map(({href, title}) => (
             <span key={href}>
               <Link
                 href={href}
@@ -50,7 +50,7 @@ export function Term({ id, title, expansion, paragraphs, links }: TermProps) {
 type ParagraphProps = {
   paragraph: TermParagraph;
 };
-function Paragraph({ paragraph }: ParagraphProps) {
+function Paragraph({paragraph}: ParagraphProps) {
   if (typeof paragraph === 'string') {
     return <p>{paragraph}</p>;
   }
@@ -62,7 +62,7 @@ function Paragraph({ paragraph }: ParagraphProps) {
           return p;
         }
 
-        const { id, title } = p;
+        const {id, title} = p;
         return <LinkToTerm key={title} id={id} title={title} />;
       })}
     </p>

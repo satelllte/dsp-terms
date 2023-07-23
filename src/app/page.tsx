@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { GitHubLogoIcon } from '@radix-ui/react-icons';
-import { Term } from '@/components/Term';
-import { LinkToTerm } from '@/components/LinkToTerm';
-import { terms } from '@/data/terms';
+import {GitHubLogoIcon} from '@radix-ui/react-icons';
+import {Term} from '@/components/Term';
+import {LinkToTerm} from '@/components/LinkToTerm';
+import {terms} from '@/data/terms';
 
 export default function IndexPage() {
   return (
@@ -28,7 +28,7 @@ export default function IndexPage() {
             <div className='lg:w-60'>
               <h2 className='pb-2 text-lg font-semibold'>Navigation</h2>
               <nav className='flex flex-col gap-1'>
-                {terms.map(({ id, title }) => (
+                {terms.map(({id, title}) => (
                   <div key={id}>
                     <LinkToTerm id={id} title={title} />
                   </div>
@@ -59,6 +59,6 @@ export default function IndexPage() {
 type ContainerProps = {
   children: React.ReactNode;
 };
-function Container({ children }: ContainerProps) {
+function Container({children}: ContainerProps) {
   return <div className='px-8 md:px-12 lg:px-20'>{children}</div>;
 }
