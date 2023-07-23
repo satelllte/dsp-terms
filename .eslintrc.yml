@@ -8,4 +8,4 @@ extends:
   - prettier
 
 rules:
-  - tailwindcss/classnames-order: 'off' # Handled by "prettier-plugin-tailwindcss"
+  tailwindcss/classnames-order: 'off' # Handled by "prettier-plugin-tailwindcss"
